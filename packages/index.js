@@ -1,4 +1,4 @@
-// 导入颜色选择器组件
+// 导入按钮、大转盘组件
 import zzmButton from './button'
 import zzmTurntable from './turntable'
 
