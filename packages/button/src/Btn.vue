@@ -140,7 +140,7 @@ export default {
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  padding:0 5px;
+  /* padding:0 5px; */
 }
 .btn::before {
   content: "loading";
