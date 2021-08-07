@@ -1,6 +1,5 @@
 # [个人NPM组件库zzmcomponentlib](https://www.npmjs.com/package/zzmcomponentlib)
 
-# componentlib
 [该组件库在线链接](http://zhengzemin.cn:8087/)
 
 [郑泽敏个人组件库在线文档](http://zhengzemin.cn:8088/componentDos/visualization/button.html)
