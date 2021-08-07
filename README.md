@@ -60,6 +60,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### 卸载
 `npm uninstall zzmcomponentlib`
 
+### 更新的就npm i全局一下，在`npm i zzmcomponentlib --save-dev`
+
+```
+import zzmcomponentlib from 'zzmcomponentlib'
+import  'zzmcomponentlib/lib/zzmcomponentlib.css'
+Vue.use(zzmcomponentlib)
+```
+
 
 ### 0.0.1
 | 新特性       | Bug修复           | 作者           | 更新时间           | 
