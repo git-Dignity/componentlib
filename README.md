@@ -1,5 +1,6 @@
-# componentlib
-[该组件库](http://zhengzemin.cn:8087/)
+# [个人NPM组件库zzmcomponentlib](https://www.npmjs.com/package/zzmcomponentlib)
+
+[该组件库在线链接](http://zhengzemin.cn:8087/)
 
 [郑泽敏个人组件库在线文档](http://zhengzemin.cn:8088/componentDos/visualization/button.html)
 
@@ -50,6 +51,23 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Update Log
 ---
+
+## 使用该组件库
+
+### 安装
+`npm install zzmcomponentlib --save-dev`
+
+### 卸载
+`npm uninstall zzmcomponentlib`
+
+### 更新的就npm i全局一下，在`npm i zzmcomponentlib --save-dev`
+
+```
+import zzmcomponentlib from 'zzmcomponentlib'
+import  'zzmcomponentlib/lib/zzmcomponentlib.css'
+Vue.use(zzmcomponentlib)
+```
+
 
 ### 0.0.1
 | 新特性       | Bug修复           | 作者           | 更新时间           | 
