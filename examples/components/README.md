@@ -5,3 +5,6 @@
   * 按钮组件案例
 * TurntableUse
   * 大转盘组件案例
+* SlideNumUse
+  * 数字滑块动画组件案例
+  
