@@ -7,4 +7,5 @@
   * 大转盘组件案例
 * SlideNumUse
   * 数字滑块动画组件案例
-  
+* ExportDownUse
+  * 导出exceil表格组件案例
