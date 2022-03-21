@@ -32,6 +32,11 @@ module.exports = {
         //   '^/appsvc-test/': '/appsvc/'
         // }
       },
+      '/rainwater/': {
+        target: "http://10.44.20.234/",
+        changeOrigin: true,
+        ws: true
+      },
       "/zzm":{
         target: "http://zhengzemin.cn/",
         changeOrigin: true,

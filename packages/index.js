@@ -11,9 +11,10 @@ import zzmButton from "./button"
 import zzmTurntable from "./turntable"
 import zzmSliderNum from "./slider-num"
 import zzmExportDown from "./export-down"
+import zzmPdfViewDown from "./pdf-view-down"
 
 // 存储组件列表
-const components = [zzmButton, zzmTurntable, zzmSliderNum, zzmExportDown]
+const components = [zzmButton, zzmTurntable, zzmSliderNum, zzmExportDown, zzmPdfViewDown]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function(Vue) {
@@ -36,4 +37,5 @@ export default {
   zzmTurntable,
   zzmSliderNum,
   zzmExportDown,
+  zzmPdfViewDown
 }

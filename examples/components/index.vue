@@ -12,7 +12,8 @@
    <zzm-btn class="button" type="success" size="medium" @click="turntableComponent">大转盘组件案例</zzm-btn>
    <zzm-btn class="button" type="info" size="medium" @click="sliderNumComponent">数字滑块动画组件案例</zzm-btn>
    <zzm-btn class="button" type="warning" size="medium" @click="exportDownComponent">导出下载组件案例</zzm-btn>
-   <!-- danger -->
+   <zzm-btn class="button" type="danger" size="medium" @click="pdfViewDownComponent">PDF可查看下载PDF/DOC组件案例</zzm-btn>
+ 
   </div>
 </template>
 
@@ -37,6 +38,9 @@ export default {
     },
     exportDownComponent(){
       this.$router.push('/export-down');
+    },
+    pdfViewDownComponent(){
+      this.$router.push('/pdf-view-down')
     }
   }
 }

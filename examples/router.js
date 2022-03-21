@@ -13,7 +13,7 @@ import ButtonUse from './components/ButtonUse.vue'
 import TurntableUse from './components/TurntableUse.vue'
 import SlideNumUse from './components/SlideNumUse.vue'
 import ExportDownUse from './components/ExportDownUse.vue'
-
+import PdfViewDownUse from './components/PdfViewDownUse.vue'
 
 
 
@@ -26,7 +26,9 @@ import ExportDownUse from './components/ExportDownUse.vue'
     // 数字滑块动画
     {path: '/slider-num', name: 'slider-num', component: SlideNumUse},
     // 导出下载
-    {path: '/export-down', name: 'export-down', component: ExportDownUse}
+    {path: '/export-down', name: 'export-down', component: ExportDownUse},
+    // PDF可查看下载PDF/DOC
+    {path: '/pdf-view-down', name: 'pdf-view-down', component: PdfViewDownUse}
 ]
 
 export default routers 

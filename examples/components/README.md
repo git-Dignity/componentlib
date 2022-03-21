@@ -9,3 +9,5 @@
   * 数字滑块动画组件案例
 * ExportDownUse
   * 导出exceil表格组件案例
+* PdfViewDownUse
+  * PDF可查看下载PDF/DOC组件案例

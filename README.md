@@ -80,3 +80,4 @@ Vue.use(zzmcomponentlib)
 | 添加`zzm-turntable`组件      | 大转盘    | -- | ZZM | 2020/11/1 16:29 | 
 | 添加`zzm-slider-num`组件     | 数字滑块动画     | -- | ZZM | 2022/3/17 17:30 | 
 | 添加`zzm-export-down`组件    | 导出下载exceil表格      | -- | ZZM | 2022/3/21 12:30 | 
+| 添加`zzm-pdf-view-down`组件    | PDF可查看下载PDF/DOC      | -- | ZZM | 2022/3/22 12:30 | 
