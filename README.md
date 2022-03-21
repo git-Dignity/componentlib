@@ -43,6 +43,10 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Git
+master：主分支
+develop：开发分支（目前在此开发）
+
 ### 目录
 |-- examples      // 原 src 目录，改成 examples 用作示例展示
 
