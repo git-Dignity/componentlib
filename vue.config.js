@@ -1,7 +1,7 @@
 /*
  * @Author: zemin zheng
  * @Date: 2022-03-17 15:42:30
- * @LastEditTime: 2022-03-18 17:31:39
+ * @LastEditTime: 2022-06-30 21:09:47
  * @LastEditors: zemin zheng
  * @Description: 头部注释
  * @FilePath: \componentlib\vue.config.js
@@ -25,7 +25,7 @@ module.exports = {
     // https: true,
     proxy: {
       "/appsvc": {
-        target: "http://10.44.20.234/",
+        target: "http://zhengzemin.cn/",
         changeOrigin: true,
         ws: true,
         // pathRewrite: {
@@ -33,7 +33,7 @@ module.exports = {
         // }
       },
       '/rainwater/': {
-        target: "http://10.44.20.234/",
+        target: "http://zhengzemin.cn/",
         changeOrigin: true,
         ws: true
       },

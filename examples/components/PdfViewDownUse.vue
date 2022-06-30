@@ -1,7 +1,7 @@
 <!--
  * @Author: zemin zheng
  * @Date: 2022-03-21 11:25:45
- * @LastEditTime: 2022-03-22 10:49:00
+ * @LastEditTime: 2022-06-30 21:15:59
  * @LastEditors: zemin zheng
  * @Description: PDF可查看下载PDF/DOC组件 -- 使用例子
  * 
@@ -33,12 +33,12 @@ export default {
     getData() {
       //   rainwater  这个是nginx转发过的
       this.data.pdfUrl = encodeURIComponent(
-        "/rainwater/雨水情小时报-2022032111.pdf"
+        "/rainwater/-2022032111.pdf"
       )
       this.data.wordUrl = encodeURIComponent(
-        "/rainwater/雨水情小时报-2022032111.docx"
+        "/rainwater/-2022032111.docx"
       )
-      this.data.pdfTitle = "/rainwater/雨水情小时报-2022032111.pdf".split(
+      this.data.pdfTitle = "/rainwater/-2022032111.pdf".split(
         "rainwater/"
       )[1]
       this.docxDown = true
