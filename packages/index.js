@@ -1,7 +1,7 @@
 /*
  * @Author: zemin zheng
  * @Date: 2022-03-17 15:42:30
- * @LastEditTime: 2022-03-17 18:10:25
+ * @LastEditTime: 2022-07-01 17:57:28
  * @LastEditors: zemin zheng
  * @Description: 导入组件
  * @FilePath: \componentlib\packages\index.js
@@ -12,9 +12,10 @@ import zzmTurntable from "./turntable"
 import zzmSliderNum from "./slider-num"
 import zzmExportDown from "./export-down"
 import zzmPdfViewDown from "./pdf-view-down"
+import zzmWaterRipple from './water-ripple'
 
 // 存储组件列表
-const components = [zzmButton, zzmTurntable, zzmSliderNum, zzmExportDown, zzmPdfViewDown]
+const components = [zzmButton, zzmTurntable, zzmSliderNum, zzmExportDown, zzmPdfViewDown, zzmWaterRipple]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function(Vue) {
@@ -37,5 +38,6 @@ export default {
   zzmTurntable,
   zzmSliderNum,
   zzmExportDown,
-  zzmPdfViewDown
+  zzmPdfViewDown,
+  zzmWaterRipple
 }

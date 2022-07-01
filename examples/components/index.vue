@@ -1,7 +1,7 @@
 <!--
  * @Author: zemin zheng
  * @Date: 2022-03-17 15:42:30
- * @LastEditTime: 2022-03-17 18:17:41
+ * @LastEditTime: 2022-07-01 18:11:23
  * @LastEditors: zemin zheng
  * @Description: 全部组件案例入口
  * @FilePath: \componentlib\examples\components\index.vue
@@ -13,6 +13,7 @@
    <zzm-btn class="button" type="info" size="medium" @click="sliderNumComponent">数字滑块动画组件案例</zzm-btn>
    <zzm-btn class="button" type="warning" size="medium" @click="exportDownComponent">导出下载组件案例</zzm-btn>
    <zzm-btn class="button" type="danger" size="medium" @click="pdfViewDownComponent">PDF可查看下载PDF/DOC组件案例</zzm-btn>
+   <zzm-btn class="button" type="primary" size="medium" @click="waterRippleComponent">水波纹比例图</zzm-btn>
  
   </div>
 </template>
@@ -41,6 +42,9 @@ export default {
     },
     pdfViewDownComponent(){
       this.$router.push('/pdf-view-down')
+    },
+    waterRippleComponent(){
+      this.$router.push('/water-ripple')
     }
   }
 }
