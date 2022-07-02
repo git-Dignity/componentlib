@@ -1,4 +1,5 @@
 
+
 # [个人NPM组件库zzmcomponentlib](https://www.npmjs.com/package/zzmcomponentlib)
 
 [该组件库在线链接](http://zhengzemin.cn:8087/)
@@ -83,3 +84,4 @@ Vue.use(zzmcomponentlib)
 | 添加`zzm-export-down`组件    | 导出下载exceil表格      | -- | ZZM | 2022/3/21 12:30 | 
 | 添加`zzm-pdf-view-down`组件    | PDF可查看下载PDF/DOC      | -- | ZZM | 2022/3/22 12:30 | 
 | 添加`zzm-water-ripple`组件    | 水波纹比例图      | -- | ZZM | 2022/7/1 17:50 | 
+| 添加`zzm-line-select`组件    | 线段的选择状态      | -- | ZZM | 2022/7/2 15:22 | 

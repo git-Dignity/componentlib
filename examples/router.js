@@ -15,6 +15,7 @@ import SlideNumUse from './components/SlideNumUse.vue'
 import ExportDownUse from './components/ExportDownUse.vue'
 import PdfViewDownUse from './components/PdfViewDownUse.vue'
 import WaterRippleUse from './components/WaterRippleUse.vue'
+import LineSelectUse from './components/LineSelectUse.vue'
 
 
  const routers  = [
@@ -30,7 +31,9 @@ import WaterRippleUse from './components/WaterRippleUse.vue'
     // PDF可查看下载PDF/DOC
     {path: '/pdf-view-down', name: 'pdf-view-down', component: PdfViewDownUse},
     // 水波纹比例图
-    {path: '/water-ripple', name: 'water-ripple', component: WaterRippleUse}
+    {path: '/water-ripple', name: 'water-ripple', component: WaterRippleUse},
+    // 线段的选择状态
+    {path: '/line-select', name: 'line-select', component: LineSelectUse}
 ]
 
 export default routers 
