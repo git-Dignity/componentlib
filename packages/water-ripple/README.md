@@ -1,97 +1,77 @@
 
-# PDF可查看下载PDF/DOC组件
 
-## zzm-pdf-view-down 组件
+# 水波纹比例图组件
 
-一个基于PDF.js viewer可查看下载PDF/DOC的预览下载文件
+## zzm-water-ripple 组件
+## zzm-water-ripple-1 组件
 
-
-可以预览是PDF，但下载我想是word，支持吗？
-
-* sure，只要将docxDown值设为true，传入wordUrl链接即可；若为false，下载的就是pdf
+一个基于css水波纹比例图组件
 
 
-追问：好奇你是怎么实现的？我记得PDF插件只能下载PDF
+zzm-water-ripple、zzm-water-ripple-1有什么区别
 
-* 是的，原本只支持下载PDF；但我阅读源码，多写了一个new file：viewerDocxDown.js，就可以支持下载word
-
+* 样式不一样
 
 
 ### 使用方法
 
 ```javascript
-<zzm-pdf-view-down :data="data" :docxDown.sync="docxDown" @close="close" />
-<zzm-pdf-view-down @close="close" />
+<div class="substance">
+  <zzm-water-ripple class="item" :num="0"> </zzm-water-ripple>
+  <zzm-water-ripple class="item" :num="1"> </zzm-water-ripple>
+  <zzm-water-ripple class="item" :num="100"> </zzm-water-ripple>
+</div>
+<div class="substance">
+  <zzm-water-ripple-1 class="item" :num="0"> </zzm-water-ripple-1>
+  <zzm-water-ripple-1 class="item" :num="1"> </zzm-water-ripple-1>
+  <zzm-water-ripple-1 class="item" :num="100"> </zzm-water-ripple-1>
+</div>
 
 data(){
-    return {
-      data: {
-        pdfUrl: "",
-        wordUrl: "",
-        pdfTitle: "",
-      },
-      docxDown: true,
-    }
+    return {}
 },
 methods: {
-  getData() {
-      //   rainwater  这个是nginx转发过的
-      this.data.pdfUrl = encodeURIComponent(
-        "/rainwater/雨水情小时报-2022032111.pdf"
-      )
-      this.data.wordUrl = encodeURIComponent(
-        "/rainwater/雨水情小时报-2022032111.docx"
-      )
-      this.data.pdfTitle = "/rainwater/雨水情小时报-2022032111.pdf".split(
-        "rainwater/"
-      )[1]
-      this.docxDown = true
-    },
-    close(data) {
-      console.log(data)
-    },
+  
 },
 mounted() {
-  this.getData()
+ 
 },
 ```
 
-### 哪里引用了 zzm-pdf-view-down 组件？
+### 哪里引用了 zzm-water-ripple 组件？
 
-examples/components/PdfViewDownUse.vue
+examples/components/WaterRippleUse.vue
 
 ### 效果
 
-![3.zzm-pdf-view-down](https://gitee.com/zhengzem/graphic-bed/raw/master/img/20220322102923.png)
+![5.zzm-water-ripple](https://gitee.com/zhengzem/graphic-bed/raw/master/img/20220702163356.gif)
 
-请访问：http://localhost:8080/pdf-view-down
+请访问：http://localhost:8080/water-ripple
 
-### PdfViewDown Attributes
+### WaterRipple Attributes
 
 | 参数            | 说明                                        | 类型    | 可选值 | 默认值 |
 | --------------- | ------------------------------------------- | ------- | ------ | ------ |
-| data      | 所需数据                                  | Object  | ——     | ——     |
-| docx-down      | 是否下载的是word                                  | Boolean  | ——     | false     |
+| num      | 数值                                  | Number  | ——     | 0    |
 
 
-### PdfViewDown Events
+### WaterRipple Events
 
 | 事件名        | 说明                                       | 参数                    |
-| ------------- | ------------------------------------------ | ----------------------- | --- | --- |
-| close     | 关闭事件               | true      | ——  | ——  |
+| ------------- | ------------------------------------------ | ----------------------- |
+| click     | 点击事件               | true      | 
 
 
-### PdfViewDown-data Attributes
+### WaterRipple-data Attributes
 
 | 参数            | 说明                                        | 类型    | 可选值 | 默认值 |
 | --------------- | ------------------------------------------- | ------- | ------ | ------ |
-| pdfUrl      | PDF链接地址                                  | String  | ——     | encodeURIComponent("报告test.pdf")    |
-| wordUrl      | WORD链接地址                                       | String  | ——     | encodeURIComponent("报告test.docx")     |
-| pdfTitle      | PDF标题                                       | String  | ——     | 报告test     |
+| ——      | ——                                  | String  | ——     | ——    |
 
 
 ### 组件相关信息
 
 | Author     | CreateTime | UpdateTime | Introduction | parameter                                                                                                                          |
 | ---------- | ---------- | ---------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| zhengzemin | 2022/3/22  |            | zzm-pdf-view-down  | data:{ <br />pdfUrl: encodeURIComponent("报告test.pdf"), <br />wordUrl: encodeURIComponent("报告test.docx"), <br />pdfTitle: "报告test",<br />},<br />docxDown: true,<br />  |
+| zhengzemin | 2022/7/2  |            | zzm-water-ripple  | num:0<br />  |
+| zhengzemin | 2022/7/2  |            | zzm-water-ripple-1  | num:0<br />  |
