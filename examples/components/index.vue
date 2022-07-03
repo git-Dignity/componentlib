@@ -1,7 +1,7 @@
 <!--
  * @Author: zemin zheng
  * @Date: 2022-03-17 15:42:30
- * @LastEditTime: 2022-07-02 15:33:36
+ * @LastEditTime: 2022-07-03 10:58:33
  * @LastEditors: zemin zheng
  * @Description: 全部组件案例入口
  * @FilePath: \componentlib\examples\components\index.vue
@@ -55,6 +55,13 @@
         size="medium"
         @click="btnComponent('line-select')"
         >线段的选择状态</zzm-btn
+      >
+       <zzm-btn
+        class="button"
+        type="info"
+        size="medium"
+        @click="btnComponent('circular-double')"
+        >圆形百分比组件案例</zzm-btn
       >
     </div>
   </div>

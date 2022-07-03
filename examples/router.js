@@ -1,7 +1,7 @@
 /*
  * @Author: zemin zheng
  * @Date: 2022-03-17 15:42:30
- * @LastEditTime: 2022-07-01 17:57:53
+ * @LastEditTime: 2022-07-03 10:59:26
  * @LastEditors: zemin zheng
  * @Description: 路由文件入口
  * @FilePath: \componentlib\examples\router.js
@@ -16,7 +16,7 @@ import ExportDownUse from './components/ExportDownUse.vue'
 import PdfViewDownUse from './components/PdfViewDownUse.vue'
 import WaterRippleUse from './components/WaterRippleUse.vue'
 import LineSelectUse from './components/LineSelectUse.vue'
-
+import CircularDoubleUse from './components/CircularDoubleUse.vue'
 
  const routers  = [
     {path: '/', name:'Index', component: Index},
@@ -33,7 +33,9 @@ import LineSelectUse from './components/LineSelectUse.vue'
     // 水波纹比例图
     {path: '/water-ripple', name: 'water-ripple', component: WaterRippleUse},
     // 线段的选择状态
-    {path: '/line-select', name: 'line-select', component: LineSelectUse}
+    {path: '/line-select', name: 'line-select', component: LineSelectUse},
+    // 圆形百分比
+    {path: '/circular-double', name: 'circular-double', component: CircularDoubleUse},
 ]
 
 export default routers 
